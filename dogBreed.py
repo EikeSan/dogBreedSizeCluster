@@ -41,9 +41,12 @@ data.columns = ['peso', 'altura']
 
 model = KMeans(n_clusters=3)
 model.fit(data)
-print data.peso[0]
-print data.altura[0]
-print(model.predict(data.peso[0]git ))
+#print data.peso[0]
+#print data.altura[0]
+#print(model.predict(data.peso[0]))
+
+
+### CONFUSION MATRIX
 
 
 #print(model.labels_)
@@ -80,4 +83,4 @@ plt.ylabel('Altura em Centimetros')
 plt.xlabel('Peso em Kilos')
 #plt.legend()
 plt.savefig('clusterDog.png')
-#plt.show()
+plt.show()
